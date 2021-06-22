@@ -1,0 +1,124 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(/assets/font/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Netflix-Sans";
+    src: url(/assets/font/NetflixSansRegular.ttf);
+}
+
+/* ELEMENTOS BASE */
+body {
+    background: var(--preto);
+    font-family: "Netflix-Sans", sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 60px;
+    font-family: 'BebasNeue';
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-left: 45px;
+}
+header nav {
+    margin-right: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    transition: .2s;
+}
+header nav a:hover {
+    color: var(--vermelho);
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('../assets/img/Zico.jpg');
+
+    height: 500px;
+    width: 100%;
+    background-size:cover;
+
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.filme-principal .sinopse {
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgba(109, 109, 110, 0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+    padding: 0.5rem 2.2rem;
+
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+.botao:hover {
+    background-color: var(--preto);
+    color: var(--vermelho);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    margin: 10px 0 10px 0;
+    border-radius: 3px;
+
+    transition: .3s ease all;
+}
+
+.box-filme:hover {
+    transform: scale(1.1);    
+}
